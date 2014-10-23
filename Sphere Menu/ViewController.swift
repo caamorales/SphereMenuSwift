@@ -17,15 +17,12 @@ class ViewController: UIViewController, SphereMenuDelegate {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        self.view.backgroundColor = UIColor(red:1, green:0.58, blue:0.27, alpha:1)
+        self.view.backgroundColor = UIColor(red:0.2, green:0.38, blue:0.8, alpha:1)
         let start = UIImage(named: "start")
         let image1 = UIImage(named: "icon-twitter")
         let image2 = UIImage(named: "icon-email")
         let image3 = UIImage(named: "icon-facebook")
         var images:[UIImage] = [image1!,image2!,image3!]
-       // images.append(image1!)
-
-     //   SphereMenu(startPoint: CGPointMake(160, 320), startImage:start ,submenuImages:nil)
         var menu = SphereMenu(startPoint: CGPointMake(160, 320), startImage: start!, submenuImages:images)
         menu.delegate = self
         self.view.addSubview(menu)
