@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F75E0B9419F6B6070033503F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75E0B9319F6B6070033503F /* AppDelegate.swift */; };
+		F75E0B9619F6B6070033503F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75E0B9519F6B6070033503F /* ViewController.swift */; };
+		F75E0B9919F6B6070033503F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F75E0B9719F6B6070033503F /* Main.storyboard */; };
+		F75E0B9B19F6B6070033503F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F75E0B9A19F6B6070033503F /* Images.xcassets */; };
+		F75E0B9E19F6B6080033503F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75E0B9C19F6B6080033503F /* LaunchScreen.xib */; };
+		F75E0BAA19F6B6080033503F /* Sphere_MenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75E0BA919F6B6080033503F /* Sphere_MenuTests.swift */; };
+		F75E0BB419F6B61F0033503F /* SphereMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75E0BB319F6B61F0033503F /* SphereMenu.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F75E0BA419F6B6080033503F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F75E0B8619F6B6070033503F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F75E0B8D19F6B6070033503F;
+			remoteInfo = "Sphere Menu";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F75E0B8E19F6B6070033503F /* Sphere Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sphere Menu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75E0B9219F6B6070033503F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75E0B9319F6B6070033503F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F75E0B9519F6B6070033503F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F75E0B9819F6B6070033503F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F75E0B9A19F6B6070033503F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F75E0B9D19F6B6080033503F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F75E0BA319F6B6080033503F /* Sphere MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sphere MenuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F75E0BA819F6B6080033503F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F75E0BA919F6B6080033503F /* Sphere_MenuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere_MenuTests.swift; sourceTree = "<group>"; };
+		F75E0BB319F6B61F0033503F /* SphereMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereMenu.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F75E0B8B19F6B6070033503F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75E0BA019F6B6080033503F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F75E0B8519F6B6070033503F = {
+			isa = PBXGroup;
+			children = (
+				F75E0B9019F6B6070033503F /* Sphere Menu */,
+				F75E0BA619F6B6080033503F /* Sphere MenuTests */,
+				F75E0B8F19F6B6070033503F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F75E0B8F19F6B6070033503F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F75E0B8E19F6B6070033503F /* Sphere Menu.app */,
+				F75E0BA319F6B6080033503F /* Sphere MenuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F75E0B9019F6B6070033503F /* Sphere Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F75E0BB319F6B61F0033503F /* SphereMenu.swift */,
+				F75E0B9319F6B6070033503F /* AppDelegate.swift */,
+				F75E0B9519F6B6070033503F /* ViewController.swift */,
+				F75E0B9719F6B6070033503F /* Main.storyboard */,
+				F75E0B9A19F6B6070033503F /* Images.xcassets */,
+				F75E0B9C19F6B6080033503F /* LaunchScreen.xib */,
+				F75E0B9119F6B6070033503F /* Supporting Files */,
+			);
+			path = "Sphere Menu";
+			sourceTree = "<group>";
+		};
+		F75E0B9119F6B6070033503F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F75E0B9219F6B6070033503F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F75E0BA619F6B6080033503F /* Sphere MenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				F75E0BA919F6B6080033503F /* Sphere_MenuTests.swift */,
+				F75E0BA719F6B6080033503F /* Supporting Files */,
+			);
+			path = "Sphere MenuTests";
+			sourceTree = "<group>";
+		};
+		F75E0BA719F6B6080033503F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F75E0BA819F6B6080033503F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F75E0B8D19F6B6070033503F /* Sphere Menu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F75E0BAD19F6B6080033503F /* Build configuration list for PBXNativeTarget "Sphere Menu" */;
+			buildPhases = (
+				F75E0B8A19F6B6070033503F /* Sources */,
+				F75E0B8B19F6B6070033503F /* Frameworks */,
+				F75E0B8C19F6B6070033503F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sphere Menu";
+			productName = "Sphere Menu";
+			productReference = F75E0B8E19F6B6070033503F /* Sphere Menu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F75E0BA219F6B6080033503F /* Sphere MenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F75E0BB019F6B6080033503F /* Build configuration list for PBXNativeTarget "Sphere MenuTests" */;
+			buildPhases = (
+				F75E0B9F19F6B6080033503F /* Sources */,
+				F75E0BA019F6B6080033503F /* Frameworks */,
+				F75E0BA119F6B6080033503F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F75E0BA519F6B6080033503F /* PBXTargetDependency */,
+			);
+			name = "Sphere MenuTests";
+			productName = "Sphere MenuTests";
+			productReference = F75E0BA319F6B6080033503F /* Sphere MenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F75E0B8619F6B6070033503F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Camilo Morales";
+				TargetAttributes = {
+					F75E0B8D19F6B6070033503F = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F75E0BA219F6B6080033503F = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F75E0B8D19F6B6070033503F;
+					};
+				};
+			};
+			buildConfigurationList = F75E0B8919F6B6070033503F /* Build configuration list for PBXProject "Sphere Menu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F75E0B8519F6B6070033503F;
+			productRefGroup = F75E0B8F19F6B6070033503F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F75E0B8D19F6B6070033503F /* Sphere Menu */,
+				F75E0BA219F6B6080033503F /* Sphere MenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F75E0B8C19F6B6070033503F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75E0B9919F6B6070033503F /* Main.storyboard in Resources */,
+				F75E0B9E19F6B6080033503F /* LaunchScreen.xib in Resources */,
+				F75E0B9B19F6B6070033503F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75E0BA119F6B6080033503F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F75E0B8A19F6B6070033503F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75E0B9619F6B6070033503F /* ViewController.swift in Sources */,
+				F75E0B9419F6B6070033503F /* AppDelegate.swift in Sources */,
+				F75E0BB419F6B61F0033503F /* SphereMenu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F75E0B9F19F6B6080033503F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F75E0BAA19F6B6080033503F /* Sphere_MenuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F75E0BA519F6B6080033503F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F75E0B8D19F6B6070033503F /* Sphere Menu */;
+			targetProxy = F75E0BA419F6B6080033503F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F75E0B9719F6B6070033503F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F75E0B9819F6B6070033503F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F75E0B9C19F6B6080033503F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F75E0B9D19F6B6080033503F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F75E0BAB19F6B6080033503F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F75E0BAC19F6B6080033503F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F75E0BAE19F6B6080033503F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Sphere Menu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F75E0BAF19F6B6080033503F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Sphere Menu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F75E0BB119F6B6080033503F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Sphere MenuTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sphere Menu.app/Sphere Menu";
+			};
+			name = Debug;
+		};
+		F75E0BB219F6B6080033503F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Sphere MenuTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sphere Menu.app/Sphere Menu";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F75E0B8919F6B6070033503F /* Build configuration list for PBXProject "Sphere Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75E0BAB19F6B6080033503F /* Debug */,
+				F75E0BAC19F6B6080033503F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F75E0BAD19F6B6080033503F /* Build configuration list for PBXNativeTarget "Sphere Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75E0BAE19F6B6080033503F /* Debug */,
+				F75E0BAF19F6B6080033503F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F75E0BB019F6B6080033503F /* Build configuration list for PBXNativeTarget "Sphere MenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F75E0BB119F6B6080033503F /* Debug */,
+				F75E0BB219F6B6080033503F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F75E0B8619F6B6070033503F /* Project object */;
+}
