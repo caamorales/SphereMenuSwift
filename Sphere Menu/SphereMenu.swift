@@ -38,9 +38,14 @@ class SphereMenu:UIView, UICollisionBehaviorDelegate{
     
     var bumper:UIDynamicItem?
     var expanded:Bool?
+    var tapToDismiss = true
     
-    required init(startPoint:CGPoint, startImage:UIImage, submenuImages:Array<UIImage>){
-        super.init()
+    var dismissTap:UITapGestureRecognizer?
+    
+    required init(startPoint:CGPoint, startImage:UIImage, submenuImages:Array<UIImage>, tapToDismiss:Bool){
+        
+        super.init(frame: CGRectZero)
+        
         self.images = submenuImages;
         self.count = self.images!.count;
         self.start = UIImageView(image: startImage, highlightedImage: nil)
@@ -50,13 +55,17 @@ class SphereMenu:UIView, UICollisionBehaviorDelegate{
         self.addSubview(self.start!);
         self.bounds = CGRectMake(0, 0, startImage.size.width, startImage.size.height);
         self.center = startPoint;
+        self.expanded = false
+        self.tapToDismiss = tapToDismiss
+        self.dismissTap = UITapGestureRecognizer(target: self, action: "hide")
+
     }
     
     required init(coder aDecoder: NSCoder) {
         self.count = 0;
         self.start = UIImageView()
         self.images = Array()
-        super.init()
+        super.init(frame: CGRectZero)
     }
     
     required override init(frame: CGRect) {
@@ -70,6 +79,11 @@ class SphereMenu:UIView, UICollisionBehaviorDelegate{
         self.commonSetup()
     }
     
+    func hide(){
+        if (self.expanded!) {
+            self.shrinkSubmenu()
+        }
+    }
     
     func commonSetup()
     {
@@ -132,8 +146,7 @@ class SphereMenu:UIView, UICollisionBehaviorDelegate{
     func startTapped(gesture:UITapGestureRecognizer){
         self.animator?.removeBehavior(self.collision)
         self.animator?.removeBehavior(self.itemBehavior)
-        
-        //[self removeSnapBehaviors];
+        self.removeSnapBehaviors()
         
         if (self.expanded == true) {
             self.shrinkSubmenu()
@@ -189,6 +202,7 @@ class SphereMenu:UIView, UICollisionBehaviorDelegate{
            self.snapToStartWithIndex(i)
         }
         self.expanded = false;
+        self.superview?.removeGestureRecognizer(self.dismissTap!)
     }
     
     func expandSubmenu(){
@@ -196,7 +210,7 @@ class SphereMenu:UIView, UICollisionBehaviorDelegate{
            self.snapToPostionsWithIndex(i)
         }
         self.expanded = true;
-    
+        self.superview?.addGestureRecognizer(self.dismissTap!)
     }
     
     func snapToStartWithIndex(index:Int)
@@ -229,7 +243,8 @@ class SphereMenu:UIView, UICollisionBehaviorDelegate{
     }
     
     func collisionBehavior(behavior: UICollisionBehavior, endedContactForItem item1: UIDynamicItem, withItem item2: UIDynamicItem) {
-        self.animator?.addBehavior(self.itemBehavior)
+      //  return;
+       self.animator?.addBehavior(self.itemBehavior)
 
         if (item1 !== self.bumper){
             let index = self.indexOfItemInArray(self.items!, item: item1)
